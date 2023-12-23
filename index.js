@@ -14,7 +14,7 @@ mongoose.connect(process.env.MONGODB_URL)
 //using middleware
 app.use(express.json());
 app.use(cors());
-app.use("/api",routes);
+app.use("/",routes);
 //listening at port
 app.listen(PORT,()=>{
     console.log(`Listening at ${PORT}`);
