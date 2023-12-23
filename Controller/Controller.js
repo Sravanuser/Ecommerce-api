@@ -12,7 +12,3 @@ module.exports.getData = async(req,res) => {
     const myData = await product.find(queryObject);
     res.json({myData}); 
 }
- module.exports.queries = async(req,res) => {
-    const myData = await product.find(req.query).sort("name -price");   
-    res.status(201).json({myData});
- }
