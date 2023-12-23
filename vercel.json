@@ -2,7 +2,7 @@
     "version" : 2,
     "builds" : [
         {
-            "src" : "./index.js",
+            "src" : "index.js",
             "use" : "@vercel/node"
         }
     ],
@@ -11,5 +11,8 @@
             "src" : "/(.*)",
             "dest" : "/"
         }
-    ]
+    ],
+    "env" : {
+        "MONGODB_URL" : "mongodb+srv://Sravanuser:Sravan123@cluster0.gtv8mlz.mongodb.net/Ecommerce-Api?retryWrites=true&w=majority"
+    }
 }
